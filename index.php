@@ -1,4 +1,23 @@
+<?php     
 
+if (isset($_POST['btnsubmit'])){
+    $email = $_POST['fromemail'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+    $to_email = 'waiyan@vitaltechmm.com';
+$headers = 'From: '. $email;
+if(mail($to_email, $subject, $message, $headers))
+      {
+      echo "<script>alert('Mail was sent !');</script>";
+      echo "<script>document.location.href='index.php'</script>";
+      }
+      else
+      {
+      echo "<script>alert('Mail was not sent. Please try again later');</script>";
+      }
+
+}
+?>
 
 
 <!DOCTYPE html>
@@ -207,7 +226,7 @@
 
           </div> 
 
-            <form action="" class="reveal-content" method="POST">
+            <form action="" class="reveal-content">
               <div class="form-group">
                 <input name="fromemail" type="email" class="form-control" id="email" placeholder="Email">
               </div>
