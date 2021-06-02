@@ -1,23 +1,4 @@
-<?php     
 
-if (isset($_POST['btnsubmit'])){
-    $email = $_POST['fromemail'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
-    $to_email = 'info@vitaltechmm.com';
-$headers = 'From: '. $email;
-if(mail($to_email, $subject, $message, $headers))
-      {
-      echo "<script>alert('Mail was sent !');</script>";
-      echo "<script>document.location.href='index.php'</script>";
-      }
-      else
-      {
-      echo "<script>alert('Mail was not sent. Please try again later');</script>";
-      }
-
-}
-?>
 
 
 <!DOCTYPE html>
