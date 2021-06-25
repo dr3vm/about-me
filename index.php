@@ -192,7 +192,7 @@
             <div class="row">
               <div class="col-md-4">
             <h5>Phone Number</h5>
-            <p>09-950411201 , 09-755004989</p>
+            <p>09-950411201 , 09-755004689</p>
             </div>
 
             <div class="col-md-4">
